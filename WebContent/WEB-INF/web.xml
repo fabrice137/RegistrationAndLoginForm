@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	
+	<!-- WELCOME PAGE LOGIN URL HANDLING -->
+	<servlet>
+		<servlet-name>IndexServletLogin</servlet-name>
+		<servlet-class>com.fabrice.IndexServletLogin</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>IndexServletLogin</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- WELCOME PAGE REGISTER URL HANDLING -->
+	<servlet>
+		<servlet-name>IndexServletRegister</servlet-name>
+		<servlet-class>com.servlets.IndexServletRegister</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>IndexServletRegister</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- REGISTER FORM HANDLING -->
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.servlets.RegisterServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/registering</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- LOGIN FORM HANDLING -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.servlets.LoginServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/logging</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
